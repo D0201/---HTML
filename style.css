@@ -1,0 +1,57 @@
+@font-face {
+  src: url("fonts/a고딕11.ttf") format("truetype");
+  font-family: "godic";
+}
+body {
+  font-family: "godic";
+  margin: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  border-bottom: 1px gray solid;
+  margin: 0;
+  padding: 20px;
+}
+
+#grid Ol {
+  border-right: 1px gray solid;
+  width: 100px;
+  margin: 0;
+  padding: 20px;
+  padding-left: 35px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#content {
+  padding-left: 30px;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+    border-bottom: none;
+  }
+  #grid ol {
+    border-right: none;
+  }
+  #grid {
+    display: block;
+  }
+  #content {
+    padding-left: 20px;
+  }
+}
+#active a {
+  color: red;
+  text-decoration: underline;
+}
+#active li {
+  color: red;
+}
